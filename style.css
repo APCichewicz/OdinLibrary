@@ -1,0 +1,129 @@
+:root {
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: "relative";
+}
+header {
+  padding: 2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background: #ccc;
+}
+#books {
+  margin-inline: 15%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+}
+img {
+  justify-self: center;
+}
+.card {
+  height: 45rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 1rem;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.card div {
+  font-size: large;
+  display: grid;
+  justify-content: center;
+}
+.card-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content {
+  font-size: 2rem;
+  width: 50rem;
+  height: 50rem;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  display: grid;
+}
+.modal-content form {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1rem;
+  width: 60%;
+  margin: auto;
+}
+.modal-content form > div {
+  display: grid;
+  gtc: 1fr;
+  grid-gap: 1rem;
+}
+.modal-content form div label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.modal-content form div input {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#read > div {
+  display: flex;
+  justify-content: space-around;
+}
+.read {
+  background-color: #4caf50;
+}
+.valid {
+  background-color: #4caf50;
+}
+.invalid {
+  background-color: #f44336;
+}
+.error {
+  color: #f44336;
+}
+#read {
+  display: flex;
+}
